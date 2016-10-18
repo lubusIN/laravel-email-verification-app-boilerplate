@@ -5,6 +5,7 @@ Every time I or my colleagues start a laravel project , we need to re-implement 
 
 How I achieved this can be read [here at my blog](http://www.lubus.in/blog/adding-email-verification-in-laravel-5-3-app-149)
 
+ - Download and run `composer install`
  - After installation , configure the .env file (App key, Database credentials, Mail driver)
  - Run `php artisan migrate`
  - That's it , you are done!
