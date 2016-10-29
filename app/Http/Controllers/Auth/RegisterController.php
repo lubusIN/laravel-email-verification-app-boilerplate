@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use DB;
 use Mail;
+use Session;
 use App\User;
 use Validator;
 use Illuminate\Http\Request;
@@ -92,6 +93,7 @@ class RegisterController extends Controller
             $email = new EmailVerification(new User(['email_token' => $user->email_token, 'name' => $user->name]));
             Mail::to($user->email)->send($email);
             DB::commit();
+            Session::flash('message', 'We have sent you a verification email!');
             return back();
         }
         catch(Exception $e)
