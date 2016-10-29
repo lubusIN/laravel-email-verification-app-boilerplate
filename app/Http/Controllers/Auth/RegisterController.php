@@ -89,7 +89,7 @@ class RegisterController extends Controller
         {
             $user = $this->create($request->all());
             // After creating the user send an email with the random token generated in the create method above
-            $email = new EmailVerification(new User(['email_token' => $user->email_token]));
+            $email = new EmailVerification(new User(['email_token' => $user->email_token, 'name' => $user->name]));
             Mail::to($user->email)->send($email);
             DB::commit();
             return back();
