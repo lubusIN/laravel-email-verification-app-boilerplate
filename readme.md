@@ -3,9 +3,7 @@
 
 ### Laravel app boilerplate with email verification on registration
 
-Every time we at [LUBUS](http://www.lubus.in) start a laravel project , we need to re-implement this process of adding email verification in the project every time , so created this boilerplate out of personal needs 
-
-How we achieved this can be read [here at our blog](http://www.lubus.in/blog/adding-email-verification-in-laravel-5-3-app-149)
+Every time we at [LUBUS](http://www.lubus.in) start a laravel project , we need to re-implement this process of adding email verification in the project every time , so created this boilerplate out of personal needs. How we achieved this can be read [here at our blog](http://www.lubus.in/blog/adding-email-verification-in-laravel-5-3-app-149)
 
 ### Installation
 
