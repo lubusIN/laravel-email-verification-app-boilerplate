@@ -10,7 +10,7 @@ Every time we at [LUBUS](http://www.lubus.in) start a laravel project , we need 
  - Clone the repo using `git clone https://github.com/lubusIN/laravel-email-verification-app-boilerplate.git myApp`
  - `cd myApp`
  - Run `composer install`
- - If you already have a fresh install of laravel 5.3 , make sure to run `php artisan make:auth` at the start
+ - If you already have a fresh install of laravel, make sure to run `php artisan make:auth` at the start
  - Create the `.env` file from `.env.example` file & configure the following: App key, Database credentials, Mail driver
  - Run `php artisan key:generate`
  - Run `php artisan migrate`
